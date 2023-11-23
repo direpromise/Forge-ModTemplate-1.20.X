@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "tutorialmod:item/spear_in_hand"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "tutorialmod:item/spear_inventory"
+    },
+    "ground": {
+      "parent": "tutorialmod:item/spear_inventory"
+    },
+    "fixed": {
+      "parent": "tutorialmod:item/spear_inventory"
+    }
+  }
+}
