@@ -5,6 +5,7 @@ import net.fuii.tutorialmod.block.ModBlocks;
 import net.fuii.tutorialmod.item.custom.FuelItem;
 import net.fuii.tutorialmod.item.custom.MetalDetectorItem;
 import net.fuii.tutorialmod.item.custom.ModArmorItem;
+import net.fuii.tutorialmod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -75,6 +76,11 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
             () -> new ItemNameBlockItem(ModBlocks.CORN_CROP.get(), new Item.Properties()));
+    
+    // add music discs
+
+    public static final RegistryObject<Item> BEYOND_THE_SEA_MUSIC_DISC = ITEMS.register("beyond_the_sea_music_disc",
+            () -> new RecordItem(6, ModSounds.BEYOND_THE_SEA, new Item.Properties().stacksTo(1), 5120));
 
 
     //end of line

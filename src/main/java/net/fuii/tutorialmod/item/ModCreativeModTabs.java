@@ -48,6 +48,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
                         pOutput.accept(ModItems.CORN_SEEDS.get());
 
+                        // add music discs
+
+                        pOutput.accept(ModItems.BEYOND_THE_SEA_MUSIC_DISC.get());
+
                         // add tools
 
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());

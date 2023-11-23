@@ -24,6 +24,9 @@
   "item.tutorialmod.corn": "Corn",
   "item.tutorialmod.corn_seeds": "Corn Seeds",
 
+  "item.tutorialmod.beyond_the_sea_music_disc": "Music Disc",
+  "item.tutorialmod.beyond_the_sea_music_disc.desc": "Django Reinhardt - Beyond The Sea (La Mer)",
+
   "block.tutorialmod.sapphire_block": "Block of Sapphire",
   "block.tutorialmod.raw_sapphire_block": "Block of Raw Sapphire",
 

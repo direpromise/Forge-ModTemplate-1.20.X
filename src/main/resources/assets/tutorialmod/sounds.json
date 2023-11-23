@@ -34,5 +34,13 @@
     "sounds": [
       "tutorialmod:sound_block_fall"
     ]
+  },
+  "beyond_the_sea": {
+    "sounds": [
+      {
+        "name": "tutorialmod:beyond_the_sea",
+        "stream": true
+      }
+    ]
   }
 }

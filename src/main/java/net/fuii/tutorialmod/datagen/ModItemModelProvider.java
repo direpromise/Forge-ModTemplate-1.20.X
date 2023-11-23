@@ -60,6 +60,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.STRAWBERRY_SEEDS);
         simpleItem(ModItems.CORN_SEEDS);
 
+        // add music disc
+
+        simpleItem(ModItems.BEYOND_THE_SEA_MUSIC_DISC);
+
 
         // add flowers
 
