@@ -52,6 +52,10 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.BEYOND_THE_SEA_MUSIC_DISC.get());
 
+                        // add spawn eggs
+
+                        pOutput.accept(ModItems.RHINO_SPANW_EGG.get());
+
                         // add tools
 
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());

@@ -2,11 +2,13 @@ package net.fuii.tutorialmod.item;
 
 import net.fuii.tutorialmod.TutorialMod;
 import net.fuii.tutorialmod.block.ModBlocks;
+import net.fuii.tutorialmod.entity.ModEntities;
 import net.fuii.tutorialmod.item.custom.FuelItem;
 import net.fuii.tutorialmod.item.custom.MetalDetectorItem;
 import net.fuii.tutorialmod.item.custom.ModArmorItem;
 import net.fuii.tutorialmod.sound.ModSounds;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -81,6 +83,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> BEYOND_THE_SEA_MUSIC_DISC = ITEMS.register("beyond_the_sea_music_disc",
             () -> new RecordItem(6, ModSounds.BEYOND_THE_SEA, new Item.Properties().stacksTo(1), 5120));
+
+    // add spawn eggs
+
+    public static final RegistryObject<Item> RHINO_SPANW_EGG = ITEMS.register("rhino_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RHINO, 0x7e9680, 0xc5d1c5, new Item.Properties()));
 
 
     //end of line
