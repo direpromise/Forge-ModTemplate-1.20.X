@@ -20,6 +20,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> SOUND_BLOCK_FALL = registerSoundEvents("sound_block_fall");
     public static final RegistryObject<SoundEvent> SOUND_BLOCK_PLACE = registerSoundEvents("sound_block_place");
     public static final RegistryObject<SoundEvent> SOUND_BLOCK_HIT = registerSoundEvents("sound_block_hit");
+   // public static final RegistryObject<SoundEvent> BOSS_SONG = registerSoundEvents("boss_song"); // this is the music sound I want to use for the illusioner mirror move
 
     public static final RegistryObject<SoundEvent> BEYOND_THE_SEA = registerSoundEvents("beyond_the_sea");
 

@@ -54,7 +54,7 @@ public class ModCreativeModTabs {
 
                         // add spawn eggs
 
-                        pOutput.accept(ModItems.RHINO_SPANW_EGG.get());
+                        pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
 
                         // add tools
 
