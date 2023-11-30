@@ -2,6 +2,7 @@ package net.fuii.tutorialmod.block;
 
 import net.fuii.tutorialmod.TutorialMod;
 import net.fuii.tutorialmod.block.custom.CornCropBlock;
+import net.fuii.tutorialmod.block.custom.GemPolishingStationBlock;
 import net.fuii.tutorialmod.block.custom.SoundBlock;
 import net.fuii.tutorialmod.block.custom.StrawberryCropBlock;
 import net.fuii.tutorialmod.item.ModItems;
@@ -85,6 +86,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_CATMINT = BLOCKS.register("potted_catmint",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.CATMINT,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
+
+    // custom block entity
+
+    public static final RegistryObject<Block> GEM_POLISHING_STATION = registerBlock("gem_polishing_station",
+            () -> new GemPolishingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     //crops
 

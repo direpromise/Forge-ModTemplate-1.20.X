@@ -109,6 +109,9 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.CATMINT.get());
 
+                        // custom block entity
+                        pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());
+
                     })
                     .build());
 
