@@ -8,12 +8,12 @@ import net.fuii.tutorialmod.entity.client.RhinoRenderer;
 import net.fuii.tutorialmod.item.ModCreativeModTabs;
 import net.fuii.tutorialmod.item.ModItems;
 import net.fuii.tutorialmod.loot.ModLootModifiers;
+import net.fuii.tutorialmod.recipe.ModRecipes;
 import net.fuii.tutorialmod.screen.GemPolishingStationScreen;
 import net.fuii.tutorialmod.screen.ModMenuTypes;
 import net.fuii.tutorialmod.sound.ModSounds;
 import net.fuii.tutorialmod.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -52,6 +52,8 @@ public class TutorialMod {
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
