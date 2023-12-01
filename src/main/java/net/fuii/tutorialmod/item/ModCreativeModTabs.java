@@ -112,6 +112,15 @@ public class ModCreativeModTabs {
                         // custom block entity
                         pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());
 
+                        // add wood
+                        pOutput.accept(ModBlocks.PINE_LOG.get());
+                        pOutput.accept(ModBlocks.PINE_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PINE_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PINE_WOOD.get());
+
+                        pOutput.accept(ModBlocks.PINE_PLANKS.get());
+                        pOutput.accept(ModBlocks.PINE_LEAVES.get());
+
                     })
                     .build());
 
