@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.fuii.tutorialmod.block.ModBlocks;
 import net.fuii.tutorialmod.block.entity.ModBlockEntities;
 import net.fuii.tutorialmod.entity.ModEntities;
+import net.fuii.tutorialmod.entity.client.ModBoatRenderer;
 import net.fuii.tutorialmod.entity.client.RhinoRenderer;
 import net.fuii.tutorialmod.item.ModCreativeModTabs;
 import net.fuii.tutorialmod.item.ModItems;
@@ -89,7 +90,10 @@ public class TutorialMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             Sheets.addWoodType(ModWoodTypes.PINE);
 
+
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
 
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }

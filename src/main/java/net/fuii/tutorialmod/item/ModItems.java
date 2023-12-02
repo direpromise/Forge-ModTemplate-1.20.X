@@ -3,9 +3,11 @@ package net.fuii.tutorialmod.item;
 import net.fuii.tutorialmod.TutorialMod;
 import net.fuii.tutorialmod.block.ModBlocks;
 import net.fuii.tutorialmod.entity.ModEntities;
+import net.fuii.tutorialmod.entity.custom.ModBoatEntity;
 import net.fuii.tutorialmod.item.custom.FuelItem;
 import net.fuii.tutorialmod.item.custom.MetalDetectorItem;
 import net.fuii.tutorialmod.item.custom.ModArmorItem;
+import net.fuii.tutorialmod.item.custom.ModBoatItem;
 import net.fuii.tutorialmod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -95,6 +97,13 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.PINE_SIGN.get(), ModBlocks.PINE_WALL_SIGN.get()));
     public static final RegistryObject<Item> PINE_HANGING_SIGN = ITEMS.register("pine_hanging_sign",
             () -> new HangingSignItem(ModBlocks.PINE_HANGING_SIGN.get(), ModBlocks.PINE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    // add boats
+
+    public static final RegistryObject<Item> PINE_BOAT = ITEMS.register("pine_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PINE, new Item.Properties()));
+    public static final RegistryObject<Item> PINE_CHEST_BOAT = ITEMS.register("pine_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PINE, new Item.Properties()));
 
 
     //end of line
