@@ -111,6 +111,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         // add boats
         simpleItem(ModItems.PINE_BOAT);
         simpleItem(ModItems.PINE_CHEST_BOAT);
+
+        // add dice
+
+        simpleItem(ModItems.DICE);
     }
 
     // Shoutout to El_Redstoniano for making this

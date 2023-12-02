@@ -131,6 +131,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PINE_BOAT.get());
                         pOutput.accept(ModItems.PINE_CHEST_BOAT.get());
 
+                        // add throwable projectile item (dice)
+
+                        pOutput.accept(ModItems.DICE.get());
+
 
                     })
                     .build());

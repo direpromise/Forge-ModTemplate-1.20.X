@@ -4,10 +4,7 @@ import net.fuii.tutorialmod.TutorialMod;
 import net.fuii.tutorialmod.block.ModBlocks;
 import net.fuii.tutorialmod.entity.ModEntities;
 import net.fuii.tutorialmod.entity.custom.ModBoatEntity;
-import net.fuii.tutorialmod.item.custom.FuelItem;
-import net.fuii.tutorialmod.item.custom.MetalDetectorItem;
-import net.fuii.tutorialmod.item.custom.ModArmorItem;
-import net.fuii.tutorialmod.item.custom.ModBoatItem;
+import net.fuii.tutorialmod.item.custom.*;
 import net.fuii.tutorialmod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -104,6 +101,11 @@ public class ModItems {
             () -> new ModBoatItem(false, ModBoatEntity.Type.PINE, new Item.Properties()));
     public static final RegistryObject<Item> PINE_CHEST_BOAT = ITEMS.register("pine_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.PINE, new Item.Properties()));
+
+    // add throwable objects (dice)
+
+    public static final RegistryObject<Item> DICE = ITEMS.register("dice",
+            () -> new DiceItem(new Item.Properties()));
 
 
     //end of line
