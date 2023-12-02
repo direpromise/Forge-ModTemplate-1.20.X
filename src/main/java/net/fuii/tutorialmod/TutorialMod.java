@@ -12,8 +12,10 @@ import net.fuii.tutorialmod.recipe.ModRecipes;
 import net.fuii.tutorialmod.screen.GemPolishingStationScreen;
 import net.fuii.tutorialmod.screen.ModMenuTypes;
 import net.fuii.tutorialmod.sound.ModSounds;
+import net.fuii.tutorialmod.util.ModWoodTypes;
 import net.fuii.tutorialmod.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -85,6 +87,8 @@ public class TutorialMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(ModWoodTypes.PINE);
+
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
 
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
