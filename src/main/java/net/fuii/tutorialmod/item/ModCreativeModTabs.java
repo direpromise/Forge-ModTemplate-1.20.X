@@ -121,6 +121,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.PINE_PLANKS.get());
                         pOutput.accept(ModBlocks.PINE_LEAVES.get());
 
+                        pOutput.accept(ModBlocks.PINE_SAPLING.get());
+
                         // add signs
 
                         pOutput.accept(ModItems.PINE_SIGN.get());
@@ -134,6 +136,8 @@ public class ModCreativeModTabs {
                         // add throwable projectile item (dice)
 
                         pOutput.accept(ModItems.DICE.get());
+
+
 
 
                     })
