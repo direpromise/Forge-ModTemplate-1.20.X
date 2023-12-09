@@ -15,11 +15,14 @@ import net.fuii.tutorialmod.screen.ModMenuTypes;
 import net.fuii.tutorialmod.sound.ModSounds;
 import net.fuii.tutorialmod.util.ModWoodTypes;
 import net.fuii.tutorialmod.villager.ModVillagers;
+import net.fuii.tutorialmod.worldgen.tree.ModFoliagePlacers;
 import net.fuii.tutorialmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -61,6 +64,8 @@ public class TutorialMod {
         ModRecipes.register(modEventBus);
         ModTrunkPlacerTypes.register(modEventBus);
 
+        ModFoliagePlacers.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -92,7 +97,6 @@ public class TutorialMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             Sheets.addWoodType(ModWoodTypes.PINE);
-
 
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
